@@ -1,2 +1,3 @@
 # Operating Systems Final Project: 
-CPU Scheduling Algorithms [Not yet Done], Memory Management[Done], Bankers Algorithm[Done]
+Memory Management[Done], Bankers Algorithm[Done]
+By Aldrin James Alejo and Victor Anthon Cabang
