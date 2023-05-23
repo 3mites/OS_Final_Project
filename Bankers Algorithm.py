@@ -49,7 +49,7 @@ def Bankers_Algorithm(Processes,Max_Need,Available_Work):
 
     Available_Work_Iterator=0
     for x in range(0,5): #X element of Y list
-        for y in range(0,3): #depending on how many resources
+        for y in range(0,Amount_Resources): #depending on how many resources
             Max_Need_Value=Max_Need[Need_Iterator][Element_Iterator] #Max_Need[0][0]
             Process_Value=Processes[Need_Iterator][Element_Iterator] #Process_Value[0][0]
             Result=Max_Need_Value-Process_Value
