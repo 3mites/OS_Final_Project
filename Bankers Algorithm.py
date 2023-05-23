@@ -48,7 +48,7 @@ def Bankers_Algorithm(Processes,Max_Need,Available_Work):
     Tuple_Need = tuple(Need)
 
     Available_Work_Iterator=0
-    for x in range(0,5): #X element of Y list
+    for x in range(0,Amount_Process): #X element of Y list
         for y in range(0,Amount_Resources): #depending on how many resources
             Max_Need_Value=Max_Need[Need_Iterator][Element_Iterator] #Max_Need[0][0]
             Process_Value=Processes[Need_Iterator][Element_Iterator] #Process_Value[0][0]
@@ -64,8 +64,8 @@ def Bankers_Algorithm(Processes,Max_Need,Available_Work):
         if Available_Work_Value >= Need_Value:
             Element_Iterator += 1     #Check Next Need Value and compare to Next Avialable Work Value
             Success_Count += 1       #if success count =3 then append meaning can allocate
-            if Success_Count == 3:
-                for y in range(0,3):
+            if Success_Count == Amount_Resources:
+                for y in range(0,Amount_Resources):
                     Add = Available_Work[-1][y] + Processes_Copy[Need_Iterator][y]
                     Resultant_Available_Work.append(Add)
                 Available_Work.append(Resultant_Available_Work)
